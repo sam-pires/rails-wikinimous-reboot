@@ -1,0 +1,6 @@
+<% @articles.each do |a| %>
+  <div class="block-article">
+    <h2 style="color: lightblue"> <%= link_to a.title, article_path(a) %></h2>
+    <p style="color: darkgrey"><%= "#{a.content[0,50]}..." %></p>
+  </div>
+<% end %>

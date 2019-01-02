@@ -10,6 +10,14 @@
   </head>
 
   <body>
+    <div class="header" style="height: 30px; background-color: lightgrey; display: flex; justify-content: space-between;">
+      <div class="link-home">
+        <h1 style="font-size: 12px"><%= link_to "Wikinimous", articles_path %></h1>
+      </div>
+      <div class="link-new">
+        <h2 style="font-size: 10px"><%= link_to "New Article", new_article_path %></h2>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
